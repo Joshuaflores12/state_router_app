@@ -1,10 +1,15 @@
+// lines 1-8 imports the js files inside the components folder
+// Browser rowrer is the root that binds all the routing in react making the user have easier navigation on the website
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Routes} from "react-router-dom";
-import Home from "./components/Home";
-import About from  "./components/About";
-import Contact from "./components/Contact";
-import NotFound from "./components/NotFound";
-import Counter from   './components/counter';
+import Home from './components/Home';
+import About from './components/About';
+import Contact from './components/Contact';
+import NotFound from './components/NotFound';
+import Counter from './components/counter';
+
+// Router wraps everything from the links to the path of each page, it's the main route
+// routes are where the route component is set to call the page in the components folder
 
 function App(){
 return(
@@ -23,7 +28,7 @@ return(
         <Route path="/contact" element={<Contact />} />
         <Route path="/counter" element={<Counter />} />
         <Route path="*" element={<NotFound />} />
-      </Routes>
+     </Routes>
     </Router>
   );
 }
