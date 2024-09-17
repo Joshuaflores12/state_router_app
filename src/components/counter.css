@@ -1,0 +1,19 @@
+.counter{
+    font-family:serif;
+    text-align: center;
+    color: chocolate;
+}
+
+.counter button{
+    background-color: bisque;
+    border-radius: 16px;
+    font-size: 15px;
+}
+
+.counter button:hover{
+    background-color: burlywood;
+}
+
+.counter button:active{
+    transform: scale(0.85);
+}

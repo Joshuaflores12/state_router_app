@@ -1,0 +1,8 @@
+.Contact{
+    text-align: center;
+}
+
+.Contact button:active{
+    transform: scale(0.85);
+    color: green;
+}
