@@ -4,5 +4,9 @@
 
 .Contact button:active{
     transform: scale(0.85);
+    
+}
+
+.Contact button:hover{
     color: green;
 }

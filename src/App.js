@@ -7,6 +7,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import Counter from './components/counter';
+import './App.css';
+
 
 // Router wraps everything from the links to the path of each page, it's the main route
 // routes are where the route component is set to call the page in the components folder
@@ -14,7 +16,7 @@ import Counter from './components/counter';
 function App(){
 return(
   <Router>
-    <nav>
+    <nav className="Menu">
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="about">About</Link></li>
