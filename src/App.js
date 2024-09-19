@@ -7,7 +7,11 @@ import About from './components/About';
 import Contact from './components/Contact';
 import NotFound from './components/NotFound';
 import Counter from './components/counter';
+import Mynavbar from './Mynavbar';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 
 // Router wraps everything from the links to the path of each page, it's the main route
@@ -15,15 +19,17 @@ import './App.css';
 
 function App(){
 return(
+  
   <Router>
-    <nav className="Menu">
+    <Mynavbar/>
+    {/* <nav className="Menu">
       <ul>
         <li><Link to="/">Home</Link></li>
         <li><Link to="about">About</Link></li>
         <li><Link to="contact">Contact</Link></li>
         <li><Link to="counter">Counter</Link></li>
       </ul>
-    </nav>
+    </nav> */}
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -32,6 +38,7 @@ return(
         <Route path="*" element={<NotFound />} />
      </Routes>
     </Router>
+ 
   );
 }
 
